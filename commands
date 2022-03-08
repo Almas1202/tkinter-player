@@ -1,0 +1,29 @@
+root = Tk()
+
+root.title("текст")#НАЗВАНИЕ ОКНА
+
+root.mainloop()
+
+lbl = Label(window, text="Привет", font=("Arial Bold", 50))#ТЕКСТ В ОКНЕ
+lbl.grid(column=0, row=0)#ВЫЗВАТЬ ЛАБЕЛ
+
+root.geometry('400x250')#Изменить размеры окна 
+
+btn = Button(window, text="Не нажимать!", bg="black", fg="red", command=clicked)#Сделать кнопку
+btn.grid(column=1, row=0)
+
+def clicked():  
+    lbl.configure(text="Я же просил...")#Изменить параметр
+
+num1 = Entry(width = 40)
+x = format(num1.get())
+
+r1 = Radiobutton(text="Первая кнопка", variable=r_var, value=0)#Кнопка которая да или нет
+
+BooleanVar - Логическая переменная (True или FALSE)
+
+IntVaк - Целочисленная переменная
+
+DoubleVar - Вещественная переменная
+
+StringVar - Строковая переменная
